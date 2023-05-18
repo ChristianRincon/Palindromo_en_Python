@@ -4,13 +4,11 @@ def palindromo(palabra):
     palabra_invertida = palabra[: : -1]
     if palabra == palabra_invertida:
         return (True)
-    else:
-        return (False)
     
 def run():
     palabra = input("Escriba una palabra: ")
     es_palindromo = palindromo(palabra)
-    if es_palindromo == True:
+    if es_palindromo:
         print("Es palíndromo")
     else:
         print("No es palíndromo")
